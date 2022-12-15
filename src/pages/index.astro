@@ -4,78 +4,593 @@ import Card from '../components/Card.astro';
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
-	</main>
-</Layout>
+
+	<header class="site-header">
+	  <div class="logo">	
+		<img src="./public/ccfolia.png">
+		<a href="#" target="_blank">
+			CCFOLIA Bookmarklets
+		</a>
+	  </div>
+	  <nav class="header__link">
+		<a href="#" class="links" target="_blank">
+			公式Twitter
+		</a>
+		<a href="#" class="links" target="_blank">
+			開発者向け (GitHub)
+		</a>
+	  </nav>
+	</header>
+
+	<div class="cont-inner">
+		<div class="txt">
+			<p class="txt-default">
+				ココフォリア開発チームでレビュー済みのブックマークレット一覧です。
+			</p>
+			<div class="txt-memo">
+				<p>
+				ブックマークレットは任意のコードをブラウザ上で実行させる仕組みのため、信頼できない第三者に情報が送信されたり、サーバーに意図せぬ負荷をかけてしまう恐れのあるものです。このページにあるもの以外のブックマークレットは絶対に使用しないでください。
+				</p>
+			</div>
+			<p class="txt-default">
+				なお、このページに掲載されているものは安全性を検証したものであり、動作が保証されているものではありません。予告なく提供が終了される場合があります。
+			</p>
+		</div>
+
+		<div class="card-wrapper">
+			<div class="card">
+				<div class="btn__modal modal-open">
+					<div class="card__imgframe">
+						<img class="thumbnail" src="./sample.jpg">
+						<img class="icon close" src="./public/charm_zoom-in.svg">
+					</div>
+					<div class="card__textbox">
+						<div class="card__titletext">
+							部屋の所有者の時にPLがステータス秘匿でも確認できるようになるブックマークレット部屋の所有者の時にPLがステータス秘匿でも確認できるようになるブックマークレッ
+						</div>
+						<div class="card__overviewtext">
+							開発者：鳥頭めう
+						</div>
+					</div>
+				</div>
+				<div class="card__textbox">
+					<a class="button" href="#">追加する</a>
+				</div>
+			</div>
+			<div class="card">
+				<div class="btn__modal modal-open">
+					<div class="card__imgframe">
+						<img class="thumbnail" src="./sample.jpg">
+						<img class="icon close" src="./public/charm_zoom-in.svg">
+					</div>
+					<div class="card__textbox">
+						<div class="card__titletext">
+							部屋の所有者の時にPLがステータス秘匿でも確認できるようになるブックマークレット部屋の所有者の時にPLがステータス秘匿でも確認できるようになるブックマークレッ
+						</div>
+						<div class="card__overviewtext">
+							開発者：鳥頭めう
+						</div>
+					</div>
+				</div>
+				<div class="card__textbox">
+					<a class="button" href="#">追加する</a>
+				</div>
+			</div>
+			<div class="card">
+				<div class="btn__modal modal-open">
+					<div class="card__imgframe">
+						<img class="thumbnail" src="./sample.jpg">
+						<img class="icon close" src="./public/charm_zoom-in.svg">
+					</div>
+					<div class="card__textbox">
+						<div class="card__titletext">
+							部屋の所有者の時にPLがステータス秘匿でも確認できるようになるブックマークレット部屋の所有者の時にPLがステータス秘匿でも確認できるようになるブックマークレッ
+						</div>
+						<div class="card__overviewtext">
+							開発者：鳥頭めう
+						</div>
+					</div>
+				</div>
+				<div class="card__textbox">
+					<a class="button" href="#">追加する</a>
+				</div>
+			</div>
+			<div class="card">
+				<div class="btn__modal modal-open">
+					<div class="card__imgframe">
+						<img class="thumbnail" src="./sample.jpg">
+						<img class="icon close" src="./public/charm_zoom-in.svg">
+					</div>
+					<div class="card__textbox">
+						<div class="card__titletext">
+							部屋の所有者の時にPLがステータス秘匿でも確認できるようになるブックマークレット部屋の所有者の時にPLがステータス秘匿でも確認できるようになるブックマークレッ
+						</div>
+						<div class="card__overviewtext">
+							開発者：鳥頭めう
+						</div>
+					</div>
+				</div>
+				<div class="card__textbox">
+					<a class="button" href="#">追加する</a>
+				</div>
+			</div>
+			<div class="card">
+				<div class="btn__modal modal-open">
+					<div class="card__imgframe">
+						<img class="thumbnail" src="./sample.jpg">
+						<img class="icon close" src="./public/charm_zoom-in.svg">
+					</div>
+					<div class="card__textbox">
+						<div class="card__titletext">
+							部屋の所有者の時にPLがステータス秘匿でも確認できるようになるブックマークレット部屋の所有者の時にPLがステータス秘匿でも確認できるようになるブックマークレッ
+						</div>
+						<div class="card__overviewtext">
+							開発者：鳥頭めう
+						</div>
+					</div>
+				</div>
+				<div class="card__textbox">
+					<a class="button" href="#">追加する</a>
+				</div>
+			</div>
+			<div class="card">
+				<div class="btn__modal modal-open">
+					<div class="card__imgframe">
+						<img class="thumbnail" src="./sample.jpg">
+						<img class="icon close" src="./public/charm_zoom-in.svg">
+					</div>
+					<div class="card__textbox">
+						<div class="card__titletext">
+							部屋の所有者の時にPLがステータス秘匿でも確認できるようになるブックマークレット部屋の所有者の時にPLがステータス秘匿でも確認できるようになるブックマークレッ
+						</div>
+						<div class="card__overviewtext">
+							開発者：鳥頭めう
+						</div>
+					</div>
+				</div>
+				<div class="card__textbox">
+					<a class="button" href="#">追加する</a>
+				</div>
+			</div>
+			<div class="card">
+				<div class="btn__modal modal-open">
+					<div class="card__imgframe">
+						<img class="thumbnail" src="./sample.jpg">
+						<img class="icon close" src="./public/charm_zoom-in.svg">
+					</div>
+					<div class="card__textbox">
+						<div class="card__titletext">
+							部屋の所有者の時にPLがステータス秘匿でも確認できるようになるブックマークレット部屋の所有者の時にPLがステータス秘匿でも確認できるようになるブックマークレッ
+						</div>
+						<div class="card__overviewtext">
+							開発者：鳥頭めう
+						</div>
+					</div>
+				</div>
+				<div class="card__textbox">
+					<a class="button" href="#">追加する</a>
+				</div>
+			</div>
+			<div class="card">
+				<div class="btn__modal modal-open">
+					<div class="card__imgframe">
+						<img class="thumbnail" src="./sample.jpg">
+						<img class="icon close" src="./public/charm_zoom-in.svg">
+					</div>
+					<div class="card__textbox">
+						<div class="card__titletext">
+							部屋の所有者の時にPLがステータス秘匿でも確認できるようになるブックマークレット部屋の所有者の時にPLがステータス秘匿でも確認できるようになるブックマークレッ
+						</div>
+						<div class="card__overviewtext">
+							開発者：鳥頭めう
+						</div>
+					</div>
+				</div>
+				<div class="card__textbox">
+					<a class="button" href="#">追加する</a>
+				</div>
+			</div>
+			<div class="card">
+				<div class="btn__modal modal-open">
+					<div class="card__imgframe">
+						<img class="thumbnail" src="./sample.jpg">
+						<img class="icon close" src="./public/charm_zoom-in.svg">
+					</div>
+					<div class="card__textbox">
+						<div class="card__titletext">
+							部屋の所有者の時にPLがステータス秘匿でも確認できるようになるブックマークレット部屋の所有者の時にPLがステータス秘匿でも確認できるようになるブックマークレッ
+						</div>
+						<div class="card__overviewtext">
+							開発者：鳥頭めう
+						</div>
+					</div>
+				</div>
+				<div class="card__textbox">
+					<a class="button" href="#">追加する</a>
+				</div>
+			</div>
+			<div class="card">
+				<div class="btn__modal modal-open">
+					<div class="card__imgframe">
+						<img class="thumbnail" src="./sample.jpg">
+						<img class="icon close" src="./public/charm_zoom-in.svg">
+					</div>
+					<div class="card__textbox">
+						<div class="card__titletext">
+							部屋の所有者の時にPLがステータス秘匿でも確認できるようになるブックマークレット部屋の所有者の時にPLがステータス秘匿でも確認できるようになるブックマークレッ
+						</div>
+						<div class="card__overviewtext">
+							開発者：鳥頭めう
+						</div>
+					</div>
+				</div>
+				<div class="card__textbox">
+					<a class="button" href="#">追加する</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal-container">
+		<div class="modal-body">
+			<div class="modal-close">×</div>
+			<div class="modal-content">
+						<div class="modal__imgframe">
+							<img class="modal__thumbnail" src="./sample.jpg">
+						</div>
+						<div class="modal__under">
+							<div class="card__textbox">
+								<div class="modal__titletext">
+									部屋の所有者の時にPLがステータス秘匿でも確認できるようになるブックマークレット
+								</div>
+								<div class="card__overviewtext">
+									開発者：鳥頭めう
+								</div>
+							</div>
+							<div class="modal__button">追加する</div>
+						</div>
+					
+			</div>
+		</div>
+	</div>
+
+
+
+
+	
+	</Layout>
+	<script>
+	
+	$('.btn__modal').hover(
+		function() {
+			//マウスカーソルが重なった時の処理
+			$(this).find('.icon').addClass('open');
+			$(this).find('.icon').removeClass('close');
+			$(this).find('.card__imgframe img').css("filter", "brightness(110%)");
+		}, function () {
+			$(this).find('.icon').addClass('close');
+			$(this).find('.icon').removeClass('open');
+			$(this).find('.card__imgframe img').css("filter", "brightness(100%)");
+		}
+	);
+
+	$(function(){
+		var open = $('.modal-open'),
+			close = $('.modal-close'),
+			container = $('.modal-container');
+
+		//開くボタンをクリックしたらモーダルを表示する
+		open.on('click',function(){	
+			container.addClass('active');
+			return false;
+		});
+
+		//閉じるボタンをクリックしたらモーダルを閉じる
+		close.on('click',function(){	
+			container.removeClass('active');
+		});
+
+		//モーダルの外側をクリックしたらモーダルを閉じる
+		$(document).on('click',function(e) {
+			if(!$(e.target).closest('.modal-body').length) {
+				container.removeClass('active');
+			}
+		});
+	});
+	</script>
+
+	
+
+
 
 <style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
+	html{
+		background-color: #202020;
 	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
+
+	body {
+		font-family: "Helvetica Neue", Helvetica, Arial, "Noto Sans JP",
+		"Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+		/* ccfolia-bkack */
+		background: #202020;
+		color: white;
+		font-size: 14px;
 		margin: 0;
 	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
+	a{
+		text-decoration: none;
 	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
+	.open{
+		display: block;
 	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
+	.close{
+		display: none;
+	}
+	
+	.site-header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding: 16px 24px;
+	}
+	.site-header .logo{
+		display: flex;
+		align-items: center;
+	}
+	.site-header .logo a{
+		color: #ffffff;
+		display: inline-block;
+		font-size: 14px;
+		font-weight: normal;
+		font-weight: 700;
+		text-decoration: none;
+		font-family: "Roboto";
+		align-items: center;
+	}
+	.site-header img{
+		width: 45px;
+	}
+	.header__link{
+		display: flex;
+	}
+	.site-header .links{
+		color: #ffffff;
+		font-size: 14px;
+		font-weight: 700;
+		text-decoration: none;
+		padding: 8px;
+		text-align: center;
+	}
+	.site-header .links:hover{
+		background: #4e4e4e;
 		border-radius: 4px;
-		padding: 0.3em 0.45em;
 	}
-	.instructions strong {
-		color: rgb(var(--accent));
+
+	
+	.cont-inner{
+		width: 100%;
+		padding: 32px 48px;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		max-width:1280px;margin:0 auto;/*装飾用*/
 	}
-	.link-card-grid {
+
+	.txt{
+		margin-top: 8;
+	}
+	.txt-default{
+		margin: 8px 0;
+	}
+
+	.txt-memo {
+		background: #000;
+		box-sizing: border-box;
+		margin-top: 8px;
+		padding: 8px 16px;
+	}
+    .txt-memo p {
+      line-height: 180%;
+	}
+	.card-wrapper{
+		height:auto;
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
+		grid-template-columns: repeat(auto-fit, minmax(19%, 1fr));
+		grid-auto-rows: 1fr;
+		grid-gap: 0.8em;
+	}
+	.card{
+		height: auto;
+		border-radius: 8px;
+		overflow: hidden;
+		box-sizing: border-box;
+		border: 1px solid #000;/* 装飾用 */
+		box-sizing:border-box;/* 装飾用 */
+		background: #2A2A2A;
+		margin-top: 20px;
+	}
+	.card__imgframe{
+		width: 100%;
+		height: auto;
+		box-sizing: border-box;
+		position: relative;
+	}
+	.card__imgframe .thumbnail{
+		filter: brightness(100%);
+		width: 100%;
+		height: 100%;
+	}
+	.card__imgframe .icon{
+		position: absolute;
+		bottom: 4px;
+		left: 4px;
+	}
+	.card__textbox{
+		color: #ACACAC;
+		width: 100%;
+		height: auto;
+		padding: 8px;
+		box-sizing: border-box;
+		display:flex;/* 高さを揃えるための指定 */
+		flex-direction:column;/* 高さを揃えるための指定 */
+	}
+	.card__textbox > * + *{
+		margin-top: 4px;
+	}
+	.card__titletext{
+		height: 60px;
+		font-size: 14px;
+		line-height: 140%;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 3;
+		overflow: hidden;
+	}
+	.card__titletext_hover{
+		font-size: 14px;
+	}
+	.card__overviewtext{
+		font-size: 11px;
+	}
+
+	.button{
+		width: 100%;
+		height: 40px;
+		border-radius: 4px;
+		border: 1px solid #F40057;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #ffffff;
+		font-size: 14px;
+		font-weight: normal;
+		cursor: pointer;
+		margin-top: auto;
+	}
+	.button a{
+		color: #ffffff;
+	} 
+	.button:hover{
+		background: #F40057;
+		font-weight: bold;
+	}
+
+	.modal-container{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		background: rgba(0,0,0,50%);
+		padding: 40px 20px;
+		overflow: auto;
+		opacity: 0;
+		visibility: hidden;
+		transition: .3s;
+		box-sizing: border-box;
+	}
+	/*モーダル本体の擬似要素の指定*/
+	.modal-container:before{
+		content: "";
+		display: inline-block;
+		vertical-align: middle;
+		height: 100%;
+	}
+	/*モーダル本体に「active」クラス付与した時のスタイル*/
+	.modal-container.active{
+		opacity: 1;
+		visibility: visible;
+	}
+	/*モーダル枠の指定*/
+	.modal-body{
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		max-width: 672px;
+		width: 90%;
+	}
+	/*モーダルを閉じるボタンの指定*/
+	.modal-close{
+		position: absolute;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		top: -40px;
+		right: -40px;
+		width: 40px;
+		height: 40px;
+		font-size: 40px;
+		color: #fff;
+		cursor: pointer;
+	}
+	/*モーダル内のコンテンツの指定*/
+	.modal-content{
+		text-align: left;
+		height: auto;
+		border-radius: 8px;
+		overflow: hidden;
+		box-sizing: border-box;
+		background: #2A2A2A;
+	}
+	.modal__thumbnail{
+		width: 100%;
+		height: 100%;
+	}
+	.modal__titletext{
+		font-size: 14px;
+		line-height: 140%;
+		color: #ACACAC;
+	}
+	.modal__under{
+		padding: 24px;
+		display: flex;
+		align-items: center;
+	}
+	.modal__button{
+		width: 168px;
+		height: 40px;
+		border-radius: 4px;
+		border: 1px solid #F40057;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 14px;
+		cursor: pointer;
+	}
+	.modal__button:hover{
+		background: #F40057;
+		font-weight: bold;
+	}
+
+
+	@media screen and (max-width: 1100px) {
+		.card-wrapper{
+			grid-template-columns: repeat(auto-fit, minmax(24%, 1fr));
+		}
+
+	}
+	@media screen and (max-width: 933px) {
+		.card-wrapper{
+			grid-template-columns: repeat(auto-fit, minmax(32%, 1fr));
+		}
+		
+	}
+	@media screen and (max-width: 680px) {
+		.card-wrapper{
+			grid-template-columns: repeat(auto-fit, minmax(48%, 1fr));
+		}
+		.cont-inner{
+			padding: 32px 24px;
+		}
+		
+	}
+	@media screen and (max-width: 500px) {
+		.card-wrapper{
+			grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+		}
+		.cont-inner{
+			padding: 32px 24px;
+		}
+
 	}
 </style>
