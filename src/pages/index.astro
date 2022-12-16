@@ -46,7 +46,7 @@ import Card from '../components/Card.astro';
 					</div>
 					<div class="card__textbox">
 						<div class="card__titletext">
-							部屋の所有者の時にPLがステータス秘匿でも確認できるようになるブックマークレット部屋の所有者の時にPLがステータス秘匿でも確認できるようになるブックマークレッ
+							部屋の所有者の時にPLがステータス秘匿でも確認できるようになるブックマークレット部屋の所有者の時にPLがステータス秘匿でも確認できるようになるブックマークレッ	部屋の所有者の時にPLがステータス秘匿でも確認できるようになるブックマークレット部屋の所有者の時にPLがステータス秘匿でも確認できるようになるブックマークレッ	部屋の所有者の時にPLがステータス秘匿でも確認できるようになるブックマークレット部屋の所有者の時にPLがステータス秘匿でも確認できるようになるブックマークレッ
 						</div>
 						<div class="card__overviewtext">
 							開発者：鳥頭めう
@@ -262,14 +262,15 @@ import Card from '../components/Card.astro';
 	
 	$('.btn__modal').hover(
 		function() {
+			if (window.matchMedia("(min-width: 501px)").matches) {                                          
 			//マウスカーソルが重なった時の処理
 			$(this).find('.icon').addClass('open');
 			$(this).find('.icon').removeClass('close');
 			$(this).find('.card__imgframe img').css("filter", "brightness(110%)");
 			$(this).find('.card__titletext').css("color", "#fff");
 			$(this).find('.card__titletext').css("text-decoration", "underline");
-			$(this).find('.card__textbox').css("cursor", "pointer");
-			
+			$(this).css("cursor", "pointer");
+		}
 
 		}, function () {
 			$(this).find('.icon').addClass('close');
@@ -288,9 +289,9 @@ import Card from '../components/Card.astro';
         //開くボタンをクリックしたらモーダルを表示する
         open.on('click',function(){    
 			var winW = $(window).width();
-			var devW = 500;
+			var devW = 501;
 			if (winW >= devW) {                                               
-		container.addClass('active');
+				container.addClass('active');
 			}
 			return false;
 		});
@@ -307,12 +308,12 @@ import Card from '../components/Card.astro';
             }
         });
 		$(window).on('resize', function(){ // ウィンドウがリサイズしたら
-		var winW = $(window).width();
-		var devW = 500;
-		if (winW <= devW) { // ウィンドウ幅が500よりも小さい時
-		// モーダルを閉じる処理を書いておく
-		container.removeClass('active');
-		} 
+			var winW = $(window).width();
+			var devW = 501;
+			if (winW <= devW) { // ウィンドウ幅が500よりも小さい時
+			// モーダルを閉じる処理を書いておく
+				container.removeClass('active');
+			} 
 		});
     });
 	
@@ -411,7 +412,7 @@ import Card from '../components/Card.astro';
 	}
     .txt-memo p {
       line-height: 180%;
-	  font-weight: 600;
+	  font-weight: bold;
 	  margin: 0;
 	}
 	.card-wrapper{
@@ -445,7 +446,7 @@ import Card from '../components/Card.astro';
 	.card__imgframe .icon{
 		position: absolute;
 		bottom: 8px;
-		left: 4px;
+		right: 4px;
 	}
 	.card__textbox{
 		width: 100%;
@@ -491,7 +492,6 @@ import Card from '../components/Card.astro';
 		font-size: 14px;
 		font-weight: normal;
 		cursor: pointer;
-		margin-top: 18px;
 	}
 	.button a{
 		color: #ffffff;
@@ -621,9 +621,11 @@ import Card from '../components/Card.astro';
 			padding: 32px 24px;
 		}
 	}
-	@media screen and (max-width: 500px) {
+	@media screen and (max-width: 501px) {
 		.card-wrapper{
 			grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+			display: block;
+			height: auto;
 		}
 		.icon{
 			display: none;
@@ -631,6 +633,10 @@ import Card from '../components/Card.astro';
 		.cont-inner{
 			padding: 32px 24px;
 		}
-
+		.card__titletext{
+			height: auto;
+			display: block;
+			overflow: visible;
+		}
 	}
 </style>
