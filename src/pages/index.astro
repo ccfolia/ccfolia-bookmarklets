@@ -400,19 +400,19 @@ import Card from '../components/Card.astro';
 		margin-top: 8;
 	}
 	.txt-default{
-		margin: 8px 0;
+		margin: 10px 0;
 		font-weight: 400;
 	}
 
 	.txt-memo {
 		background: #000;
 		box-sizing: border-box;
-		margin-top: 8px;
 		padding: 8px 12px;
 	}
     .txt-memo p {
       line-height: 180%;
 	  font-weight: 600;
+	  margin: 0;
 	}
 	.card-wrapper{
 		height:auto;
@@ -481,7 +481,7 @@ import Card from '../components/Card.astro';
 
 	.button{
 		width: 100%;
-		height: 40px;
+		height: 37px;
 		border-radius: 4px;
 		border: 1px solid #F40057;
 		display: flex;
@@ -573,9 +573,11 @@ import Card from '../components/Card.astro';
 	.modal__textbox{
 		width: 100%;
 		height: auto;
+		padding: 0 8px;
 		box-sizing: border-box;
 		display:flex;/* 高さを揃えるための指定 */
 		flex-direction:column;/* 高さを揃えるための指定 */
+		
 	}
 	.modal__under{
 		padding: 24px;
@@ -584,7 +586,7 @@ import Card from '../components/Card.astro';
 	}
 	.modal__button{
 		width: 168px;
-		height: 40px;
+		height: 42px;
 		border-radius: 4px;
 		border: 1px solid #F40057;
 		display: flex;
@@ -618,7 +620,6 @@ import Card from '../components/Card.astro';
 		.cont-inner{
 			padding: 32px 24px;
 		}
-		
 	}
 	@media screen and (max-width: 500px) {
 		.card-wrapper{
