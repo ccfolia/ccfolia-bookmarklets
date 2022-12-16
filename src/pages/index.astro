@@ -234,32 +234,28 @@ import Card from '../components/Card.astro';
 		<div class="modal-body">
 			<div class="modal-close">×</div>
 			<div class="modal-content">
-						<div class="modal__imgframe">
-							<img class="modal__thumbnail" src="./sample.jpg">
+				<div class="modal__imgframe">
+					<img class="modal__thumbnail close" src="./sample.jpg">
+					<iframe width="560" height="315" class="modal__thumbnail" src="https://www.youtube.com/embed/-qfuOox_-uQ?controls=0?rel=0&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div class="modal__under">
+					<div class="modal__textbox">
+						<div class="modal__titletext">
+							部屋の所有者の時にPLがステータス秘匿でも確認できるようになるブックマークレット
 						</div>
-						<div class="modal__under">
-							<div class="modal__textbox">
-								<div class="modal__titletext">
-									部屋の所有者の時にPLがステータス秘匿でも確認できるようになるブックマークレット
-								</div>
-								<div class="card__overviewtext">
-									開発者：鳥頭めう
-								</div>
-							</div>
-							<div class="modal__button">追加する</div>
+						<div class="card__overviewtext">
+							開発者：鳥頭めう
 						</div>
-					
+					</div>
+					<div class="modal__button">追加する</div>
+				</div>
 			</div>
 		</div>
 	</div>
-
-
-
-
-	
 	</Layout>
-	<script>
+
 	
+	<script>
 	$('.btn__modal').hover(
 		function() {
 			if (window.matchMedia("(min-width: 501px)").matches) {                                          
@@ -270,8 +266,7 @@ import Card from '../components/Card.astro';
 			$(this).find('.card__titletext').css("color", "#fff");
 			$(this).find('.card__titletext').css("text-decoration", "underline");
 			$(this).css("cursor", "pointer");
-		}
-
+			}
 		}, function () {
 			$(this).find('.icon').addClass('close');
 			$(this).find('.icon').removeClass('open');
@@ -317,19 +312,13 @@ import Card from '../components/Card.astro';
 			} 
 		});
     });
-	
-	
 	</script>
-
-	
-
 
 
 <style>
 	html{
 		background-color: #202020;
 	}
-
 	body {
 		font-family: "Helvetica Neue", Helvetica, Arial, "Noto Sans JP",
 		"Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
@@ -348,7 +337,6 @@ import Card from '../components/Card.astro';
 	.close{
 		display: none;
 	}
-	
 	.site-header {
 		display: flex;
 		flex-direction: row;
@@ -388,8 +376,6 @@ import Card from '../components/Card.astro';
 		background: #4e4e4e;
 		border-radius: 4px;
 	}
-
-	
 	.cont-inner{
 		width: 100%;
 		padding: 16px 48px;
@@ -397,7 +383,6 @@ import Card from '../components/Card.astro';
 		box-sizing: border-box;
 		max-width:1280px;margin:0 auto;/*装飾用*/
 	}
-
 	.txt{
 		margin-top: 8;
 	}
@@ -405,7 +390,6 @@ import Card from '../components/Card.astro';
 		margin: 10px 0;
 		font-weight: 400;
 	}
-
 	.txt-memo {
 		background: #000;
 		box-sizing: border-box;
@@ -480,7 +464,6 @@ import Card from '../components/Card.astro';
 		color: #ACACAC;
 		text-decoration: none;
 	}
-
 	.button{
 		width: 100%;
 		height: 37px;
@@ -501,7 +484,6 @@ import Card from '../components/Card.astro';
 		background: #F40057;
 		font-weight: bold;
 	}
-
 	.modal-container{
 		position: fixed;
 		top: 0;
@@ -561,6 +543,19 @@ import Card from '../components/Card.astro';
 		box-sizing: border-box;
 		background: #2A2A2A;
 	}
+	.modal__imgframe{
+		position:relative; 
+		padding-bottom:56.25%; 
+		height:0; 
+		overflow: hidden;
+	}
+	.modal__thumbnail{
+		position: absolute; 
+		top:0; 
+		left:0; 
+		width:100%; 
+		height:100%;
+	}
 	.modal__thumbnail{
 		width: 100%;
 		height: 100%;
@@ -578,7 +573,6 @@ import Card from '../components/Card.astro';
 		box-sizing: border-box;
 		display:flex;/* 高さを揃えるための指定 */
 		flex-direction:column;/* 高さを揃えるための指定 */
-		
 	}
 	.modal__under{
 		padding: 24px;
@@ -600,19 +594,15 @@ import Card from '../components/Card.astro';
 		background: #F40057;
 		font-weight: bold;
 	}
-
-
 	@media screen and (max-width: 1100px) {
 		.card-wrapper{
 			grid-template-columns: repeat(auto-fit, minmax(24%, 1fr));
 		}
-
 	}
 	@media screen and (max-width: 933px) {
 		.card-wrapper{
 			grid-template-columns: repeat(auto-fit, minmax(32%, 1fr));
 		}
-		
 	}
 	@media screen and (max-width: 680px) {
 		.card-wrapper{
